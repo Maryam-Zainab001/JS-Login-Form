@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form Validation</title>
+<style>
+  .error {
+    color: red;
+    font-size: 0.8em;
+
+  }
+  
+body {
+  margin: 0;
+  background-color: hsl(0, 0%, 98%);
+  color: #333;
+  
+}
+
+
+
+#myForm{
+  box-sizing: border-box;
+  padding: 2rem;
+  border-radius: 2rem;
+  background-color: hsl(0, 0%, 100%);
+  border: 4px solid black;
+  
+}
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px   ;
+  box-sizing: border-box;
+  border: 1px solid black ;
+  border-radius: 2px;
+  
+
+}
+ 
+</style>
+</head>
+<body>
+
+<form id="myForm">
+  <div>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+    <span id="emailError" class="error"></span>
+  </div>
+  <div>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password">
+    <span id="passwordError" class="error"></span>
+  </div>
+  <div>
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age">
+    <span id="ageError" class="error"></span>
+  </div>
+  <button type="submit">Submit</button>
+</form>
+
+<div id="boxes"></div>
+
+
+
+
+
+<script src="task.js"></script>
+</body>
+</html>
